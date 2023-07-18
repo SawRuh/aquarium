@@ -162,7 +162,8 @@ img:nth-of-type(2) {
   bottom: 5%;
   /* animation after applying the keyframe */
   animation-name: fish2;
-  animation-duration: 40s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 img:nth-of-type(3) {
@@ -218,9 +219,28 @@ img:nth-of-type(4) {
     bottom: 5%;
   }
 
-  to {
-    right: 95%;
+  50% {
+    right: 90%;
     bottom: 70%;
+    transform: scaleX(1);
+  }
+
+  52% {
+    right: 90%;
+    bottom: 70%;
+    transform: scaleX(-1);
+  }
+
+  99% {
+    transform: scaleX(-1);
+    right: 27%;
+    bottom: 7%;
+  }
+
+  to {
+    transform: scaleX(1);
+    right: 25%;
+    bottom: 5%;
   }
 }
 
